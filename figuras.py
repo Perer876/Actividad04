@@ -22,5 +22,14 @@ class Circle:
     def area(self):
         return self.radio * self.radio * pi
 
-x = Circle(10)
-print(x.area())
+print('Area de un cuadrado')
+x = Square(float(input('lado: ')))
+print('Area = ', x.area(), '\n')
+
+print('Area de un triangulo')
+x = Triangle(float(input('base: ')), float(input('altura: ')))
+print('Area = ', x.area(), '\n')
+
+print('Area de un circulo')
+x = Circle(float(input('radio: ')))
+print('Area = ', x.area())
