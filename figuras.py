@@ -1,3 +1,5 @@
+from math import pi
+
 class Square:
     def __init__(self, side:float = 0.0):
         self.side = side
@@ -13,5 +15,12 @@ class Triangle:
     def area(self):
         return (self.base * self.altitude)/2
 
-x = Triangle(3, 4)
+class Circle:
+    def __init__(self, radio:float = 0.0):
+        self.radio = radio
+
+    def area(self):
+        return self.radio * self.radio * pi
+
+x = Circle(10)
 print(x.area())
